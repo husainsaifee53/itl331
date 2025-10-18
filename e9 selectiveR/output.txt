@@ -1,4 +1,4 @@
-
+<!-- 
 // # **Selective Repeat Protocol**
 
 
@@ -44,10 +44,10 @@
 
 // ```
 <!-- client -->
-Localhost/127.0.0.1
-No of frame is:8
-30
-40
+Localhost/127.0.0.1  
+No of frame is:8  
+30  
+40  
 50
 60
 70
@@ -78,4 +78,4 @@ The number of packets sent is:8
 
 // Program to implement **Selective Repeat** has been successfully executed and output verified.
 
-
+ -->

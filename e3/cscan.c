@@ -89,7 +89,8 @@ int main() {
 
 // Step 8: Find the index of the initial head position in the sorted list.
 
-// Step 9: Move the head from the initial position towards the maximum cylinder number, servicing all requests to the right of the head in order.
+// Step 9: Move the head from the initial position towards the maximum cylinder number, servicing all 
+//requests to the right of the head in order.
 
 // Step 10: Move the head to the maximum cylinder (disk_size - 1) if not already there.
 
