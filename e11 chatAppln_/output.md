@@ -11,3 +11,25 @@ Step 7: create a buffer to send and receive the message.
 Step 8:Start sending message 
 Step 9:Repeat step 4 to 8 until the connection is terminated. 
 Step 10:stop. 
+
+
+OUTPUT:
+
+client:
+
+Start the chat, type your message and press Enter:
+Hello husain
+Server: Hi there! 
+lets chat here
+Server: sure! lets do it
+
+
+server:
+
+
+Server ready for chatting...
+Client connected.
+Client: Hello husain
+Hi there! 
+Client: lets chat here
+sure! lets do it
