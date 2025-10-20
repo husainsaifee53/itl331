@@ -160,36 +160,36 @@ int main() {
 // Exiting...
 
 
-Algo:
+// Algo:
 
-Step 1: Start
-Step 2: Define an array buffer[SIZE] to simulate the shared buffer.
-Step 3: Declare semaphore variables:
-    sem_t mutex for mutual exclusion.
-    sem_t empty to count empty buffer slots.
-    sem_t full to count filled buffer slots.
-Step 4: Initialize global variables in = 0 and out = 0 (circular buffer indices).
-Step 5: Initialize semaphores:
-    mutex to 1 (unlocked).
-    empty to SIZE (buffer capacity).
-    full to 0 (initially empty buffer).
-Step 6: Use a menu in the main loop to perform the following actions:
-    Produce
-    Consume
-    Exit
-Step 7: Check if empty slots are available using sem_trywait(&empty)
-    If not available, print "Buffer full", skip producing.
-Step 8: Lock the critical section using sem_wait(&mutex)
-Step 9: Ask the user to input the item to produce.
-Step 10: Insert item at buffer[in], update in = (in + 1) % SIZE
-Step 11: Unlock critical section using sem_post(&mutex)
-Step 12: Signal sem_post(&full) to indicate one item is available
-Step 13: Check if items are available using sem_trywait(&full)
-        If not available, print "Buffer empty", skip consuming.
-Step 14: Lock the critical section using sem_wait(&mutex)
-Step 15: Remove item from buffer[out], update out = (out + 1) % SIZE
-Step 16: Unlock critical section using sem_post(&mutex)
-Step 17: Signal sem_post(&empty) to indicate one slot is now empty
-Step 18: On exit, destroy all semaphores using sem_destroy()
-Step 19: Terminate the program
-Step 20: Stop
+// Step 1: Start
+// Step 2: Define an array buffer[SIZE] to simulate the shared buffer.
+// Step 3: Declare semaphore variables:
+//     sem_t mutex for mutual exclusion.
+//     sem_t empty to count empty buffer slots.
+//     sem_t full to count filled buffer slots.
+// Step 4: Initialize global variables in = 0 and out = 0 (circular buffer indices).
+// Step 5: Initialize semaphores:
+//     mutex to 1 (unlocked).
+//     empty to SIZE (buffer capacity).
+//     full to 0 (initially empty buffer).
+// Step 6: Use a menu in the main loop to perform the following actions:
+//     Produce
+//     Consume
+//     Exit
+// Step 7: Check if empty slots are available using sem_trywait(&empty)
+//     If not available, print "Buffer full", skip producing.
+// Step 8: Lock the critical section using sem_wait(&mutex)
+// Step 9: Ask the user to input the item to produce.
+// Step 10: Insert item at buffer[in], update in = (in + 1) % SIZE
+// Step 11: Unlock critical section using sem_post(&mutex)
+// Step 12: Signal sem_post(&full) to indicate one item is available
+// Step 13: Check if items are available using sem_trywait(&full)
+//         If not available, print "Buffer empty", skip consuming.
+// Step 14: Lock the critical section using sem_wait(&mutex)
+// Step 15: Remove item from buffer[out], update out = (out + 1) % SIZE
+// Step 16: Unlock critical section using sem_post(&mutex)
+// Step 17: Signal sem_post(&empty) to indicate one slot is now empty
+// Step 18: On exit, destroy all semaphores using sem_destroy()
+// Step 19: Terminate the program
+// Step 20: Stop
